@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: e7987a4f9b79e754c951908fed65bc14
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - m_LeftController: {fileID: 8758423527188247893, guid: 5b158b94c373d4b4f9e98cdb92789343,
+      type: 3}
+  - m_RightController: {fileID: 919132149155446097, guid: 2d10b9b89f2474de9800b152c3d00004,
+      type: 3}
+  - m_LeftControllerOculusPackage: {instanceID: 0}
+  - m_RightControllerOculusPackage: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
