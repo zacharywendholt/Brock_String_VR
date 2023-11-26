@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.XR.CoreUtils.Datums;
 using UnityEngine;
 
 public class BrockCameraJoint : MonoBehaviour
 {
     [SerializeField] private GameObject cameraObject;
+    [SerializeField] public float distanceOffset;
 
     private float verticalOffset;
 
@@ -15,6 +17,7 @@ public class BrockCameraJoint : MonoBehaviour
     {
         verticalOffset = 0.0f;
         horizontalOffset = 0.0f;
+        
     }
 
     // Update is called once per frame
@@ -26,7 +29,7 @@ public class BrockCameraJoint : MonoBehaviour
 
     private void updatePos() {
         Vector3 newPosition = cameraObject.transform.position;
-        newPosition += new Vector3(horizontalOffset, verticalOffset, 0);
+        newPosition += new Vector3(horizontalOffset, verticalOffset, distanceOffset);
         transform.position = newPosition;
     }
 
@@ -38,5 +41,9 @@ public class BrockCameraJoint : MonoBehaviour
 
     public void setHorizontalOffset(float newHorizontalOffset) {
         horizontalOffset = newHorizontalOffset;
+    }
+
+    public void setDistanceOffset(float newDistanceOffset) {
+        distanceOffset = newDistanceOffset;
     }
 }
